@@ -9,27 +9,25 @@ namespace Sudoku_Solver
 {
     class Program
     {
-        public Program()
-        {
-
-        }
-
         static void Main(string[] args)
         {
             Program program = new Program();
-            program.start();
+            SudokuPuzzle sudokuPuzzle = new SudokuPuzzle();
+
+            program.start(sudokuPuzzle.Puzzle);
+            program.start(sudokuPuzzle.Puzzle2);
+
+            Console.ReadLine();
         }
 
-        private void start()
+        private void start(int[][] puzzle)
         {
-            SudokuPuzzle sudokuPuzzle = new SudokuPuzzle();
             SudokuSolver solver = new SudokuSolver();
 
             Console.WriteLine("The unsolved puzzle:");
-            solver.displayGrid(sudokuPuzzle.Puzzle);
+            solver.displayGrid(puzzle);
 
-            solver.solve(sudokuPuzzle.Puzzle, 0, 0);
-            Console.ReadLine();
+            solver.solve(puzzle, 0, 0);
         }
     }
 }

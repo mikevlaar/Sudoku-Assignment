@@ -25,5 +25,23 @@ namespace Sudoku0Solver
             get { return puzzle; }
             set { puzzle = value; }
         }
+
+        private int[][] puzzle2 = {    
+                                        new int[9] {8, 0, 0, 0, 0, 0, 0, 0, 0}, 
+                                        new int[9] {0, 0, 3, 6, 0, 0, 0, 0, 0}, 
+                                        new int[9] {0, 7, 0, 0, 9, 0, 2, 0, 0}, 
+                                        new int[9] {0, 5, 0, 0, 0, 7, 0, 0, 0}, 
+                                        new int[9] {0, 0, 0, 0, 4, 5, 7, 0, 0}, 
+                                        new int[9] {0, 0, 0, 1, 0, 0, 0, 3, 0}, 
+                                        new int[9] {0, 0, 1, 0, 0, 0, 0, 6, 8}, 
+                                        new int[9] {0, 0, 8, 5, 0, 0, 0, 1, 0}, 
+                                        new int[9] {0, 9, 0, 0, 0, 0, 4, 0, 0} 
+                                  };
+
+        public int[][] Puzzle2
+        {
+            get { return puzzle2; }
+            set { puzzle2 = value; }
+        }
     }
 }

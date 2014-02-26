@@ -143,7 +143,7 @@ namespace Sudoku_Solver
         }
 
         /**
-        * Checks a 2x3 "box" in the array to see if it contains a number
+        * Checks a 3x3 "box" in the array to see if it contains a number
         * @param grid the array that contains the "box" to be checked
         * @param row the row of a number in the "box"
         * @param col the column of a number in the "box"

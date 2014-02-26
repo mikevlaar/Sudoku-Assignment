@@ -8,7 +8,7 @@ namespace Sudoku0Solver
 {
     class SudokuPuzzle
     {
-        public int[][] puzzle = {    
+        private int[][] puzzle = {    
                                     new int[9] {4, 8, 0, 0, 0, 6, 9, 0, 2}, 
                                     new int[9] {0, 0, 2, 0, 0, 8, 0, 0, 1}, 
                                     new int[9] {9, 0, 0, 3, 7, 0, 0, 6, 0}, 
@@ -19,5 +19,11 @@ namespace Sudoku0Solver
                                     new int[9] {7, 0, 0, 9, 0, 0, 6, 0, 0}, 
                                     new int[9] {6, 0, 9, 2, 0, 0, 0, 1, 8} 
                                 };
+
+        public int[][] Puzzle
+        {
+            get { return puzzle; }
+            set { puzzle = value; }
+        }
     }
 }

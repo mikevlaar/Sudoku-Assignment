@@ -40,7 +40,6 @@ namespace Sudoku_Solver
         * @param puzzle the 2D array puzzle to be solved
         * @param row the row of the position to solve
         * @param col the column of the position to solve
-        * @return 0 for backtracking
         */
         public void solve(int[][] puzzle, int row, int col)
         {
